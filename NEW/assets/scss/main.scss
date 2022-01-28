@@ -1,0 +1,227 @@
+/*
+define a variables
+*/
+body{
+    box-sizing: content-box;
+}
+#BBB{
+    margin-top: -2px !important;
+}
+#bg-image{
+    background-image: url(../img/Group\ 2.png) !important; 
+    background-size:100% !important;
+    background-repeat: no-repeat !important;
+    width: 100% !important;
+    height: 100vh !important;
+}
+@import 'partials/partials';
+.container-fluid{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bi-list{
+    font-size: 12px;
+}
+@media only screen and (max-width: 555px) {
+    #logo {
+        margin-top: 8px!important;
+        width: 100px !important;
+    }
+    #BBB{
+        margin-top: -2px !important;
+    }
+    #Three{
+        font-size: 12px !important;
+        margin-left: 11px;
+    }
+    #city {
+        padding: 12px 7px !important;
+        font-size: 12px !important; 
+    }
+    .cityy{
+        padding-bottom: 1px !important;
+    }
+    .search{
+        font-size: 12px !important;
+    }
+    .form-control{
+        font-size: 13px;
+        padding-left: 10px;
+        margin-right: -1px;
+    }
+    #down{
+        padding-left: 7px;
+    }
+    .fa, .fas {
+        font-family: "Font Awesome 5 Pro" !important;
+        float: right;
+        font-weight: 900 !important;
+        padding-top: 3px;
+    }
+    #drop{
+        width: 100%;
+        font-size: 14px !important;
+        margin-left: 0px !important;
+        padding: 6px;
+    }
+   
+    .dimen{
+        margin-top:7px !important ;
+    }
+    }
+@media only screen and (max-width: 991px){
+    .ul{
+        .li{
+           text-align: center !important;
+        }
+    }
+    #an {
+        font-size: 16px !important;
+        margin-left: -53px !important;
+        display: inline-block !important;
+    }
+    .drop {
+        margin-right: 16px !important;
+    }
+    .ms-md-4 {
+        margin-left: 0 !important;
+    }
+    #bg-image{
+        background-image: url(../img/Group\ 2.png) !important; 
+        background-size:cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center;
+        width: 100% !important;
+        height: 100vh !important;
+    }
+   
+    }
+@media only screen and (max-width: 786px) {
+// logo
+    #logo{
+      width: 180px;
+      height: auto;
+    }
+    #Three{
+        font-size: 15px;
+    }
+    //Box style
+    .drop1 {
+        margin-right: 8px !important;
+    }
+    #city {
+        
+        padding: 17px 7px !important;
+        
+    }
+    .search {
+        padding: 0px 17px !important;
+    }
+   
+}
+@media only screen and (max-width: 1200px) {
+  
+    #an{
+        font-size: 16px;
+        margin-left: -27px;
+    }
+    #drop{
+        margin-right: 12px;
+        margin-left: 5px;
+    } 
+    #bg-image{
+        background-image: url(../img/Group\ 2.png) !important; 
+        background-size:cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center;
+        width: 100% !important;
+        height: 100vh !important;
+    }
+}
+@media only screen and (min-width: 1230px){
+    .drop {
+        margin-right: 8px !important;
+        border-radius: 0 !important;
+        border: 1px solid #d8d3d3 !important;
+        font-size: 19px !important;  
+    }
+    .form-control{
+        font-size: 22px !important;
+        padding-left: 40px;
+    }
+    #city {
+        font-size: 19px !important;
+    }
+    .search{
+        font-size: 19px !important;
+    }
+  
+}
+@media only screen and (min-width: 555px) {
+    .bi-list {
+        width: 37px;
+        height: 41px;
+    }
+   
+}
+// five link
+// Nesting using
+.nav-item{
+    display: inline;
+}
+.ul{
+    margin-top: 21px;
+    .li{
+        margin-left: 55px;
+    }
+}
+//Hover state for both navbar and down three letter
+.nav-link:hover{
+    @include Hover;
+}
+.btn{
+    margin: 0 50px 0 23px;
+    background-color: $button-color;
+}
+.nav-link{
+    font-size: 20px;
+    color: $black-color;
+} 
+//Three Letters
+.link:hover{
+    @include Hover;
+}
+.link-group{ 
+    padding-top: 5%;
+    padding-left: 8%;
+    font-family: $font-body;
+    font-size: 22px;
+    .link{
+        color: $black-color;
+        padding: 1%;
+        text-decoration: none;
+    }
+}
+//City button
+#city{
+    border-bottom-left-radius: 0px;
+    padding: 17px 30px;
+    border: 1px solid #d8d3d3;
+    word-spacing: 25px;
+}
+//Search button
+.search{
+    padding: 0px 50px;
+    margin: 0px 0px 0 23px;
+    border-bottom-right-radius: 0;
+    font-weight: bold;
+}
+//next three button dropdown
+.drop {
+    margin-right: 8px;
+    border-radius: 0;
+    border: 1px solid #d8d3d3;  
+}
+//dropdown arrow reduce
+.dropdown-toggle::after {
+    content: none;
+}
